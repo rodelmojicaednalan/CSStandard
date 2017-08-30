@@ -1,0 +1,14 @@
+.page-promotion{
+	padding:50px;
+}
+
+.page-banner{
+	position: relative;
+	height:400px;
+	background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Technology/full%20page/1.jpg);
+	z-index: 0; 
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

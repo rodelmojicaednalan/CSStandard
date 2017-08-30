@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+html,body{
+	position: relative;
+	min-height: 100%;
+	font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+html,
+body,
+header,
+nav,
+main,
+section,
+h1,h2,h3,h4,h5,h6,
+div{
+	margin:0;
+	padding:0;
+}
+
+/* Block__element--modifier */
+.banner{
+	position: relative;
+	height:400px;
+	background-image: url(../banner.jpg);
+	z-index: 0; 
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion{
+	padding:50px;
+}
+
+.promotion--d-flex{
+	display:flex;
+}
+
+.promotion--flex-row{
+	flex-direction: row;
+}
+
+.promotion--flex-center{
+	align-items: center;
+}
+
+.promotion--flex-justify-content{
+	justify-content: space-around;
+}
+
+.banner__flex-box{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.banner--text-white{
+	color:white;
+}
+
+.banner__title{
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+}
+
+.card{
+	width:23rem;
+	margin:0 20px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card--text-center{
+	text-align: center;
+}
+
+.card--float-right{
+	float: right
+}
+
+.card__card-img{
+	width:100%;
+	overflow: hidden;
+}
+
+.card__img{
+	width:100%;
+}
+
+.card__body{
+	padding:1rem;
+}
+
+.card__body-title{
+	font-size:1rem;
+	font-weight: 700;
+}
+
+.card__body-subtitle{
+	font-size:1rem;
+	font-weight: 500;
+}
+
+.card__body-text{
+	margin-bottom: 1rem;
+	font-size: 1rem;
+    color: #747373;
+}
+
+.button{
+	padding:10px 20px;
+	display: inline-block;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.button--button-blue{
+	background: #4285F4;
+	color:#fff;
+}
