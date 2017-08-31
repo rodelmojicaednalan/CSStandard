@@ -1,4 +1,4 @@
-# CCStandard
+# CSStandard
 
 ## Requirements
 * NodeJS for package manager

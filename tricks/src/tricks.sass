@@ -1,0 +1,39 @@
+$break-small: 320px;
+$break-medium: 480px;
+$break-large: 1024px;
+
+@mixin respond-to($media)
+    @if $media==small-screen
+        @media only screen and (min-width: $break-small)
+            @content
+
+    @else if $media==medium-screens
+        @media only screen and (min-width: $break-medium)
+            @content
+
+    @else if $media==wide-screens
+        @media only screen and (min-width: $break-large)
+            @content
+
+.profile-pic
+    margin : auto
+    display : block
+
+    @include respond-to(small-screen)
+        width: 100%
+
+    @include respond-to(medium-screens)
+        width: 50%
+
+    @include respond-to(wide-screens)
+        width: 25%
+
+body
+    @include respond-to(small-screen)
+        background: #000
+
+    @include respond-to(medium-screens)
+        background: #333
+
+    @include respond-to(wide-screens)
+        background: #fff
