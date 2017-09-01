@@ -28,3 +28,13 @@ modules - encapsulated models and re-usable
 state - overrides the default
 themes - optional , if theming is needed
 ```
+
+**CSS Priority**
+```
+li            {...}  /* a=0 b=0 c=1 -> specificity =   1 */
+ul li         {...}  /* a=0 b=0 c=2 -> specificity =   2 */
+ul ol li      {...}  /* a=0 b=0 c=3 -> specificity =   3 */
+li.red        {...}  /* a=0 b=1 c=1 -> specificity =  11 */
+ul ol li.red  {...}  /* a=0 b=1 c=3 -> specificity =  13 */
+#list         {...}  /* a=1 b=0 c=0 -> specificity = 100 */
+```
